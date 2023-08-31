@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura de acuerdo a tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+/*oreja izquierda*/
+.orejaI {
+    position: absolute;
+    top: 210px;
+    left: 710px;
+    transition: transform 0.3s
+}
+/*fx movimiento oreja*/
+.orejaI:hover{
+    transform: skew(20deg);}
+
+/*oreja derecha*/
+.orejaD {
+    position: absolute;
+    top: 210px;
+    right: 800px;
+}
+/*fx movimiento oreja derecha*/
+.orejaD:hover{
+    transform: skew(-20deg);}
+
+.ojoI {
+    position: absolute;
+    top: 210px;
+    left: 810px;
+    z-index: 2;
+}
+
+.ojoD {
+    position: absolute;
+    top: 210px;
+    right: 900px;
+    z-index:2;
+}
+
+.cara {
+    position: absolute;
+    top: 200px;
+    right: 830px;
+}
+.nariz{
+    position: absolute;
+    top: 280px;
+    right: 910px;
+    z-index:2;
+}
+/*sombrerito*/
+.sombrero{
+    position: absolute;
+    top: 100px;
+    right: 860px;
+    z-index:2;
+    transition: transform 0.3s ease-in-out;
+}
+.sombrero:hover {
+    transform: rotateY(360deg);
+}
+.pieI{
+    position: absolute;
+    top: 520px;
+    right: 820px;
+    z-index:2;
+}
+.pieD{
+    position: absolute;
+    top: 520px;
+    right: 990px;
+    z-index:2;
+}
+.bigote{
+    position: absolute;
+    top: 420px;
+    right: 890px;
+    z-index:2;
+}
+/*cejas*/
+.cejas{
+    position: absolute;
+    top: 180px;
+    right: 890px;
+    z-index:2;
+    transition: transform 0.3s ease-in-out;
+}
+.cejas:hover {
+    transform: rotate(180deg);
+/* Agrega más reglas para las otras imágenes */
+
+/* Puedes ajustar las posiciones según tus necesidades */
